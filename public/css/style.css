@@ -1,0 +1,146 @@
+:root {
+    --tf-primary: #2fa866;       
+    --tf-primary-hover: #248a52; 
+    --tf-accent: #00a896;       
+    --tf-accent-hover: #008a7b;  
+    --tf-bg: #f4f6f8;           
+    --tf-card-bg: #ffffff;
+    --tf-text-dark: #2c3e50;
+    --tf-text-green: #1e7e34;   
+    --tf-text-muted: #6c757d;
+    --tf-warning: #f39c12;       
+    --tf-danger: #e74c3c;       
+    --tf-success: #2fa866;       
+    --tf-info: #00a8a8;         
+}
+
+body {
+    background-color: var(--tf-bg);
+    color: var(--tf-text-dark);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+h1, h2, .tf-heading-green {
+    color: var(--tf-text-green) !important;
+}
+
+.tf-navbar {
+    background-color: var(--tf-primary);
+    border-bottom: 2px solid var(--tf-primary-hover);
+}
+
+.tf-brand-logo {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.tf-nav-link {
+    color: #ffffff;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.tf-nav-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.tf-card {
+    background-color: var(--tf-card-bg);
+    border-radius: 0.5;
+    border: 1px solid #e9ecef;
+    border-top: 4px solid var(--tf-accent);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tf-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.tf-card-title {
+    color: #555555;
+    font-size: 0.95;
+    font-weight: 600;
+}
+
+.tf-card-value {
+    color: var(--tf-text-green);
+    font-size: 2;
+    font-weight: 800;
+}
+
+.tf-table-container {
+    background-color: var(--tf-card-bg);
+    border-radius: 0.5;
+    border: 1px solid #e9ecef;
+    overflow: hidden;
+}
+
+.tf-table thead {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.tf-table th {
+    color: #333333;
+    font-size: 0.85;
+    font-weight: 700;
+}
+
+.tf-table tr.low-stock-row {
+    background-color: #fff8e1; 
+}
+
+.tf-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.625;
+    border-radius: 0.375;
+    font-size: 0.75;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: lowercase;
+}
+
+.tf-badge-success {
+    background-color: var(--tf-success);
+}
+
+.tf-badge-warning {
+    background-color: var(--tf-warning);
+}
+
+.tf-badge-danger {
+    background-color: var(--tf-danger);
+}
+
+.tf-badge-info {
+    background-color: var(--tf-info);
+}
+
+.tf-btn-primary {
+    background-color: var(--tf-accent); 
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.5 1;
+    border-radius: 0.375;
+    transition: background-color 0.2s ease;
+}
+
+.tf-btn-primary:hover {
+    background-color: var(--tf-accent-hover);
+}
+
+.tf-btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 0.5 1;
+    border-radius: 0.375;
+}
+
+.tf-btn-secondary:hover {
+    background-color: #5a6268;
+}
